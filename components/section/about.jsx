@@ -20,10 +20,10 @@ export default function About() {
                         </span>
                     </p>
                     <h1 className="text-4xl font-bold ">
-                        Hello, I'm a frontend developer
+                        Hello, I&apos;m a frontend developer
                     </h1>
                     <p className="leading-loose text-base">
-                        Hello, I'm Rian from Aceh. I have expertise in creating websites using HTML, CSS, and JavaScript. I am highly motivated to develop my skills in Frontend development professionally, and I have mastered several programming languages and frameworks, such as Javascript, PHP, React, and NextJS. So far, I have worked on several projects for both companies and personal use.
+                        Hello, I&apos;m Rian from Aceh. I have expertise in creating websites using HTML, CSS, and JavaScript. I am highly motivated to develop my skills in Frontend development professionally, and I have mastered several programming languages and frameworks, such as Javascript, PHP, React, and NextJS. So far, I have worked on several projects for both companies and personal use.
                     </p>
                     
                 </div>

@@ -9,7 +9,7 @@ export default function Hero() {
                 data-aos-duration="800" className="bg-red-0 flex flex-col gap-3 justify-center">
                 <p className="flex">
                     <span className="px-4 py-2 text-base font-medium rounded-xl dark:text-c-text dark:bg-c-bg-b bg-blue-900 text-white">
-                        Hello, I'm a
+                        Hello, I&apos;m a
                     </span>
                 </p>
                 <h1 className="text-4xl px-3 font-semibold dark:text-white text-blue-950">
@@ -43,7 +43,7 @@ export default function Hero() {
                 </button>
                 <button className="relative flex flex-col items-center group">
                     <p className="flex items-center gap-2 border-2 dark:border-c-text rounded-lg px-3 py-2 dark:text-c-text cursor-not-allowed  text-base border-blue-900 text-blue-900">
-                        <BsWhatsapp />  Let's talk
+                        <BsWhatsapp />  Let&apos;s talk
                     </p>
                     <div className="absolute bottom-5  flex-col items-center hidden mb-6 group-hover:flex">
                         <span className="relative z-10 p-2 text-xs leading-none text-black whitespace-no-wrap bg-white shadow-lg">not accessible</span>
