@@ -22,13 +22,13 @@ export default function Home() {
         <div className="container mx-auto px-3">
           <Hero />
         </div>
-        <div className="border-t-[0.5px] dark:border-c-bg-b border-gray-300">
+        <div className="lg:border-t-[0.5px] dark:border-c-bg-b border-gray-300">
           <div className="container mx-auto px-3 py-5">
             <About />
             <Portfolio />
             <Skill />
           </div>
-          <div className="bg-gray-900">
+          <div className="dark:bg-gray-900 bg-gray-300">
             <div className="container mx-auto">
               <Testimonial />
             </div>

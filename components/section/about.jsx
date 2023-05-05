@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function About() {
     return (
         <div className="max-w-7xl mx-auto">
-            <div className="grid grid-cols-3 gap-5 py-10">
+            <div className="lg:grid lg:grid-cols-3 gap-5 lg:py-10">
                 <div className="flex items-center">
 
                     <div className="bg-rd-500 overflow-hidden rounded-xl flex items-center">
@@ -13,7 +13,7 @@ export default function About() {
                             height={300} />
                     </div>
                 </div>
-                <div className=" col-span-2 w-11/12 space-y-5 px-10 flex flex-col justify-center">
+                <div className="col-span-2 lg:w-11/12 w-full space-y-5 lg:px-10 flex flex-col justify-center">
                     <p className="flex">
                         <span className="px-4 py-2 text-base font-medium rounded-xl dark:text-c-text dark:bg-c-bg-b bg-blue-900 text-white">
                             About Me

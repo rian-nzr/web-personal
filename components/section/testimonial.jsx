@@ -22,18 +22,18 @@ export default function Testimonial() {
     return (
         <>
             <div>
-                <section className="bg-gay-100">
-                    <div className="mx-auto px-4 py-16 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
+                <section className="">
+                    <div className="mx-auto px-4 py-10 sm:px-6 sm:py-24 lg:me-0 lg:pe-0 lg:ps-8">
                         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-3 lg:gap-x-16">
                             <div className="flex flex-col justify-start gap-3">
 
                                 <p className="flex">
                                     <span className="px-4 py-2 text-base font-medium rounded-xl dark:text-c-text dark:bg-c-bg-b bg-blue-900 text-white">
-                                    Testimonials
+                                        Testimonials
                                     </span>
                                 </p>
                                 <h1 className="text-4xl font-bold">
-                                In testimony
+                                    In testimony
                                 </h1>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusantium, nam.</p>
                             </div>
@@ -76,7 +76,7 @@ export default function Testimonial() {
                                                             </div>
                                                         </div>
                                                         <footer className="mt-8 text-sm text-gray-500">
-                                                            — senior software engineer 
+                                                            — senior software engineer
                                                         </footer>
                                                     </blockquote>
                                                 </div>
@@ -85,18 +85,6 @@ export default function Testimonial() {
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div className="mt-8 flex justify-center gap-4 lg:hidden">
-                            <button aria-label="Previous slide" className="prev-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
-                                <svg className="h-5 w-5 -rotate-180 transform" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-                                </svg>
-                            </button>
-                            <button aria-label="Next slide" className="next-button rounded-full border border-pink-600 p-4 text-pink-600 hover:bg-pink-600 hover:text-white">
-                                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M9 5l7 7-7 7" strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} />
-                                </svg>
-                            </button>
                         </div>
                     </div>
                 </section>

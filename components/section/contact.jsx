@@ -14,7 +14,7 @@ export default function Contact() {
                 <h1 className="text-4xl font-bold">Get in touch</h1>
                 <p className="pt-2 pb-4">Fill in the form to start a conversation</p>
             </div>
-            <div className="grid max grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x mb-20">
+            <div className="grid max grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x lg:mb-20">
                 <div className="py-6 md:py-0 md:px-6">
 
                     <div className="space-y-4 text-lg">
@@ -50,7 +50,16 @@ export default function Contact() {
                         <span className="mb-1">Message</span>
                         <textarea rows="3" className="block w-full rounded-md focus:ring focus:ring-opacity-75 focus:ring-violet-400 dark:bg-gray-800 p-2"></textarea>
                     </label>
-                    <button type="button" className="self-center px-8 py-3 text-lg rounded focus:ring hover:ring focus:ring-opacity-75 dark:bg-violet-400 dark:text-gray-900 focus:ring-violet-400 hover:ring-violet-400">Submit</button>
+                    <button className="relative flex flex-col items-center group">
+                    <p className="flex items-center gap-2 border-2 dark:border-c-text rounded-lg px-3 py-2 dark:text-c-text cursor-not-allowed  text-base border-blue-900 dark:bg-c-bg-b bg-blue-900 text-white">
+                        Submit
+                    </p>
+                    <div className="absolute bottom-5  flex-col items-center hidden mb-6 group-hover:flex">
+                        <span className="relative z-10 p-2 text-xs leading-none text-black whitespace-no-wrap bg-white shadow-lg">not accessible</span>
+                        <div className="w-3 h-3 -mt-2 rotate-45 bg-white"></div>
+                    </div>
+
+                </button>
                 </form>
             </div>
 

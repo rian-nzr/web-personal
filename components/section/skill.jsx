@@ -18,8 +18,8 @@ let data = [
 
 export default function Skill() {
     return (
-        <div className="max-w-5xl mx-auto my-5">
-            <div className="flex flex-col items-center py-14">
+        <div className="max-w-5xl mx-auto my-10">
+            <div className="flex flex-col lg:items-center py-14">
                 <p className="flex">
                     <span className="px-4 py-2 text-base font-medium rounded-xl dark:text-c-text dark:bg-c-bg-b bg-blue-900 text-white">
                         skills

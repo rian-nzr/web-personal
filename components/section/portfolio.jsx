@@ -10,7 +10,7 @@ export default function Portfolio() {
                     portfolio
                 </span>
             </p>
-            <div className="flex justify-between items-center">
+            <div className="flex lg:flex-row flex-col gap-3 justify-between items-center">
                 <h1 className="text-4xl font-bold">works and projects</h1>
                 <div className="flex gap-5 items-center">
                     <button className="relative flex flex-col items-center">
@@ -30,11 +30,11 @@ export default function Portfolio() {
                     </button>
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-10  my-5 mx-16">
+            <div className="grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 gap-10  my-5 sm:mx-16">
                 {
                     data.map((item) => (
 
-                        <div key={item} className="w-full p-3 border rounded-xl dark:border-c-border bg-c-bg-b  border-gray-300 shadow-2    xl">
+                        <div key={item} className="w-full p-3 dark:border rounded-xl dark:border-c-border dark:bg-c-bg-b  border-gray-300 shadow-2xl">
                             <div className="flex flex-col gap-5 items-start p-2">
                                 <div className="flex flex-col gap-2">
                                     <h2 className="text-2xl font-semibold">acehstore.netlify.app</h2>
@@ -56,7 +56,7 @@ export default function Portfolio() {
                                     </div>
                                 </div>
                                 <div className="py-3">
-                                    <Image  
+                                    <Image
                                         src="/images/porfolio.png"
                                         alt="ts"
                                         width={500}
