@@ -4,6 +4,8 @@ import Layout from '@/components/Layout'
 import 'aos/dist/aos.css';
 import { useEffect } from "react";
 import AOS from 'aos';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 
 export default function App({ Component, pageProps }) {

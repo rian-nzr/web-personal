@@ -27,7 +27,7 @@ export default function Hero() {
             <div
                 data-aos="fade-down"
                 data-aos-duration="800"
-                className="flex items-center justify-center col-span-    ">
+                className="flex items-center justify-center">
                 <Image
                     src='/images/myavatar.png'
                     alt="my photo"

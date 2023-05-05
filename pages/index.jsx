@@ -6,6 +6,7 @@ import About from '@/components/section/about'
 import Portfolio from '@/components/section/portfolio'
 import Skill from '@/components/section/skill'
 import Contact from '@/components/section/contact'
+import Testimonial from '@/components/section/testimonial'
 // import Skills from '@/components/section/skills'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -15,7 +16,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>RIAN</title>
+        <title>Home ~ portfolio </title>
       </Head>
       <main >
         <div className="container mx-auto px-3">
@@ -26,7 +27,14 @@ export default function Home() {
             <About />
             <Portfolio />
             <Skill />
-            <Contact/>
+          </div>
+          <div className="bg-gray-900">
+            <div className="container mx-auto">
+              <Testimonial />
+            </div>
+          </div>
+          <div className="container mx-auto px-3 py-5">
+            <Contact />
           </div>
         </div>
       </main>

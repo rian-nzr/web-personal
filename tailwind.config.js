@@ -17,7 +17,8 @@ module.exports = {
         'c-hf': '#14142a',
         'c-bg-b': '#181831',
         'c-text': '#7B4AE2',
-        'c-border': '#422c7c'
+        'c-border': '#422c7c',
+        
       }
     },
   },

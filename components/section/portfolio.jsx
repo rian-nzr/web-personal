@@ -34,7 +34,7 @@ export default function Portfolio() {
                 {
                     data.map((item) => (
 
-                        <div key={item} className="w-full p-3 border rounded-xl dark:border-c-text  border-gray-300 shadow-2    xl">
+                        <div key={item} className="w-full p-3 border rounded-xl dark:border-c-border bg-c-bg-b  border-gray-300 shadow-2    xl">
                             <div className="flex flex-col gap-5 items-start p-2">
                                 <div className="flex flex-col gap-2">
                                     <h2 className="text-2xl font-semibold">acehstore.netlify.app</h2>
