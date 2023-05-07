@@ -2,6 +2,8 @@ import Image from "next/image"
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineDownload } from "react-icons/ai"
 import { BsWhatsapp } from "react-icons/bs"
 import DownloadCv from "../assets/downloadcv"
+import ButtonWa from "../assets/buttonwa"
+import Link from "next/link"
 
 export default function Hero() {
     return (
@@ -20,15 +22,27 @@ export default function Hero() {
                     Front-end developer &sdot; Back-End developer &sdot; Fullstack developer
                 </p>
                 <div className="text-2xl lg:flex hidden gap-3 dark:text-gray-400 text-gray-600">
-                    <AiFillLinkedin />
-                    <AiFillGithub />
-                    <AiOutlineInstagram />
+                    <a href="https://www.linkedin.com/in/rian-nazar-04322523b/" target="_blank">
+                        <AiFillLinkedin />
+                    </a>
+                    <a href="https://github.com/rian-nzr" target="_blank">
+                        <AiFillGithub />
+                    </a>
+                    <a href="https://www.instagram.com/rian.nazar/" target="_blank">
+                        <AiOutlineInstagram />
+                    </a>
                 </div>
             </div>
             <div className="text-4xl flex lg:hidden gap-3 dark:text-gray-400 justify-center text-gray-600">
-                <AiFillLinkedin />
-                <AiFillGithub />
-                <AiOutlineInstagram />
+            <a href="https://www.linkedin.com/in/rian-nazar-04322523b/" target="_blank">
+                        <AiFillLinkedin />
+                    </a>
+                    <a href="https://github.com/rian-nzr" target="_blank">
+                        <AiFillGithub />
+                    </a>
+                    <a href="https://www.instagram.com/rian.nazar/" target="_blank">
+                        <AiOutlineInstagram />
+                    </a>
             </div>
             <div
                 data-aos="fade-down"
@@ -44,18 +58,9 @@ export default function Hero() {
                 data-aos="fade-left"
                 data-aos-duration="800"
                 className="flex flex-row lg:flex-col justify-center lg:items-end items-center gap-3 order-2 lg:order-none">
-                <DownloadCv/>
-                
-                <button className="relative flex flex-col items-center group">
-                    <p className="flex items-center gap-2 border-2 dark:border-c-text rounded-lg px-3 py-2 dark:text-c-text cursor-not-allowed  text-base border-blue-900 text-blue-900">
-                        <BsWhatsapp />  Let&apos;s talk
-                    </p>
-                    <div className="absolute bottom-5  flex-col items-center hidden mb-6 group-hover:flex">
-                        <span className="relative z-10 p-2 text-xs leading-none text-black whitespace-no-wrap bg-white shadow-lg">not accessible</span>
-                        <div className="w-3 h-3 -mt-2 rotate-45 bg-white"></div>
-                    </div>
+                <DownloadCv />
 
-                </button>
+                <ButtonWa />
             </div>
         </div>
     )

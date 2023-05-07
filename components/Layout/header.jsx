@@ -34,7 +34,7 @@ export default function Header() {
         <header className="container top-0 backdrop-blur mx-auto lg:pt-5 pt-3 z-40 sticky  transition-all duration-500">
             <div className="mx-auto w-full"></div>
             <div className="bg- dark:bg-c-hf bg-blue-950 backdrop-blur- rounded-lg px-3">
-                <div className="container flex justify-between h-14 mx-auto">
+                <div className="container flex justify-between items-center h-14 mx-auto">
                     <div className="flex items-center">
                         <div className="bg-white rounded-3xl">
 
@@ -63,7 +63,7 @@ export default function Header() {
                     <div className="items-center lg:flex hidden justify-center">
                         {buttonDrakMode()}
                     </div>
-                    <button onClick={() => setMenuOpen(!menuOpen)} className="flex justify-end p-4 md:hidden">
+                    <button onClick={() => setMenuOpen(!menuOpen)} className="flex justify-end text-4xl md:hidden">
                         <BiMenu />
                     </button>
                 </div>

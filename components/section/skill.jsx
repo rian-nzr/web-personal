@@ -29,9 +29,9 @@ export default function Skill() {
             </div>
             <div className="flex flex-wrap justify-center gap-14 text-5xl">
                 {data.map((item) => (
-                    <>
+                    <div key={item.id}>
                         {item.tag}
-                    </>
+                    </div>
                 ))}
             </div>
         </div>

@@ -19,7 +19,7 @@ export default function Home() {
         <title>Home ~ portfolio </title>
       </Head>
       <main >
-        <div className="container mx-auto px-3">
+        <div className="sm:container w-full mx-auto px-3">
           <Hero />
         </div>
         <div className="lg:border-t-[0.5px] dark:border-c-bg-b border-gray-300">
