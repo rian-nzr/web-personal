@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineDownload } from "react-icons/ai"
 import { BsWhatsapp } from "react-icons/bs"
+import DownloadCv from "../assets/downloadcv"
 
 export default function Hero() {
     return (
@@ -43,9 +44,8 @@ export default function Hero() {
                 data-aos="fade-left"
                 data-aos-duration="800"
                 className="flex flex-row lg:flex-col justify-center lg:items-end items-center gap-3 order-2 lg:order-none">
-                <button className="flex gap-2 dark:text-c-text text-blue-900  cursor-pointer">
-                    Download CV <AiOutlineDownload className="text-2xl" />
-                </button>
+                <DownloadCv/>
+                
                 <button className="relative flex flex-col items-center group">
                     <p className="flex items-center gap-2 border-2 dark:border-c-text rounded-lg px-3 py-2 dark:text-c-text cursor-not-allowed  text-base border-blue-900 text-blue-900">
                         <BsWhatsapp />  Let&apos;s talk

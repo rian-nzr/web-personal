@@ -13,6 +13,8 @@
     "autoprefixer": "10.4.14",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
+    "file-saver": "^2.0.5",
+    "file-server": "^2.2.1",
     "next": "13.3.0",
     "next-themes": "^0.2.1",
     "postcss": "8.4.22",
