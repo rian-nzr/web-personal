@@ -1,15 +1,13 @@
 import Image from "next/image"
 import { AiFillGithub, AiFillLinkedin, AiOutlineInstagram, AiOutlineDownload } from "react-icons/ai"
-import { BsWhatsapp } from "react-icons/bs"
 import DownloadCv from "../assets/downloadcv"
 import ButtonWa from "../assets/buttonwa"
-import Link from "next/link"
+
 
 export default function Hero() {
     return (
         <div className="lg:grid lg:grid-cols-3 flex flex-col lg:gap-5 gap-10 pt-8 lg:my-20 my- lg:pb-10 lg:mb-24 mb-10">
-            <div data-aos="fade-right"
-                data-aos-duration="800" className="bg-red-0 flex flex-col gap-3 justify-center order-1 lg:order-none">
+            <div className="bg-red-0 flex flex-col gap-3 justify-center order-1 lg:order-none">
                 <p className="flex">
                     <span className="px-4 py-2 text-base font-medium rounded-xl dark:text-c-text dark:bg-c-bg-b bg-blue-900 text-white">
                         Hello, I&apos;m a
@@ -44,20 +42,14 @@ export default function Hero() {
                     <AiOutlineInstagram />
                 </a>
             </div>
-            <div
-                data-aos="fade-down"
-                data-aos-duration="800"
-                className="flex items-center justify-center">
+            <div className="flex items-center justify-center">
                 <Image
                     src='/images/myavatar.png'
                     alt="my photo"
                     width={1000}
                     height={1000} />
             </div>
-            <div
-                data-aos="fade-left"
-                data-aos-duration="800"
-                className="flex flex-row lg:flex-col justify-center lg:items-end items-center gap-3 order-2 lg:order-none">
+            <div className="flex flex-row lg:flex-col justify-center lg:items-end items-center gap-3 order-2 lg:order-none">
                 <DownloadCv />
 
                 <ButtonWa />

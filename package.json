@@ -9,18 +9,12 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "aos": "^2.3.4",
     "autoprefixer": "10.4.14",
     "axios": "^1.4.0",
-    "emailjs-com": "^3.2.0",
     "eslint": "8.38.0",
     "eslint-config-next": "13.3.0",
     "file-saver": "^2.0.5",
-    "file-server": "^2.2.1",
-    "fs": "^0.0.1-security",
-    "gray-matter": "^4.0.3",
     "next": "13.3.0",
-    "next-mdx-remote": "^4.4.1",
     "next-themes": "^0.2.1",
     "postcss": "8.4.22",
     "react": "18.2.0",
