@@ -34,15 +34,15 @@ export default function Hero() {
                 </div>
             </div>
             <div className="text-4xl flex lg:hidden gap-3 dark:text-gray-400 justify-center text-gray-600">
-            <a href="https://www.linkedin.com/in/rian-nazar-04322523b/" target="_blank">
-                        <AiFillLinkedin />
-                    </a>
-                    <a href="https://github.com/rian-nzr" target="_blank">
-                        <AiFillGithub />
-                    </a>
-                    <a href="https://www.instagram.com/rian.nazar/" target="_blank">
-                        <AiOutlineInstagram />
-                    </a>
+                <a href="https://www.linkedin.com/in/rian-nazar-04322523b/" target="_blank">
+                    <AiFillLinkedin />
+                </a>
+                <a href="https://github.com/rian-nzr" target="_blank">
+                    <AiFillGithub />
+                </a>
+                <a href="https://www.instagram.com/rian.nazar/" target="_blank">
+                    <AiOutlineInstagram />
+                </a>
             </div>
             <div
                 data-aos="fade-down"

@@ -19,21 +19,21 @@ export default function Home() {
         <title>Home ~ portfolio </title>
       </Head>
       <main >
-        <div className="sm:container w-full mx-auto px-3">
+        <div className="sm:container lg:max-w-7xl w-full mx-auto px-3">
           <Hero />
         </div>
         <div className="lg:border-t-[0.5px] dark:border-c-bg-b border-gray-300">
-          <div className="container mx-auto px-3 py-5">
+          <div className="container lg:max-w-7xl mx-auto px-3 py-5">
             <About />
             <Portfolio />
             <Skill />
           </div>
           <div className="dark:bg-gray-900 bg-gray-300">
-            <div className="container mx-auto">
+            <div className="container lg:max-w-7xl mx-auto">
               <Testimonial />
             </div>
           </div>
-          <div className="container mx-auto px-3 py-5">
+          <div className="container lg:max-w-7xl mx-auto px-3 py-5">
             <Contact />
           </div>
         </div>

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import { useRouter } from "next/router";
 import { useTheme } from "next-themes"
 import { useState, useEffect } from "react";
 import { BsSun, BsMoonFill } from "react-icons/bs";
@@ -6,9 +7,15 @@ import { MdClose } from "react-icons/md";
 import Link from "next/link";
 import { BiMenu, BiHomeAlt, BiStore } from 'react-icons/bi'
 
-
+const navs = [
+    { text: 'Hemo', href: '/' },
+    { text: 'Blog', href: '/blog' },
+    { text: 'About', href: '/about' },
+    { text: 'Contact', href: '/contact' },
+]
 
 export default function Header() {
+    const router = useRouter();
     const [menuOpen, setMenuOpen] = useState(false)
     const { systemTheme, theme, setTheme } = useTheme();
     const [drakMode, setDrak] = useState(false);
@@ -31,9 +38,9 @@ export default function Header() {
 
     return (<>
 
-        <header className="container top-0 backdrop-blur mx-auto lg:pt-5 pt-3 z-40 sticky  transition-all duration-500">
+        <header className="container lg:max-w-7xl top-0 backdrop-blur mx-auto lg:pt-5 pt-3 z-40 sticky  transition-all duration-500">
             <div className="mx-auto w-full"></div>
-            <div className="bg- dark:bg-c-hf bg-blue-950 backdrop-blur- rounded-lg px-3">
+            <div className="bg- dark:bg-c-hf bg-blue-950 backdrop-blur- rounded-xl px-3">
                 <div className="container flex justify-between items-center h-14 mx-auto">
                     <div className="flex items-center">
                         <div className="bg-white rounded-3xl">
@@ -47,18 +54,13 @@ export default function Header() {
                         </div>
                     </div>
                     <ul className="items-stretch text-white hidden space-x-3 md:flex">
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1">Home</a>
-                        </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1">About</a>
-                        </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1 ">Blog</a>
-                        </li>
-                        <li className="flex">
-                            <a rel="noopener noreferrer" href="#" className="flex items-center px-4 -mb-1">Contact</a>
-                        </li>
+                        {navs.map((item) => (
+                            <li key={item.href} className="flex">
+                                <Link href={item.href}>
+                                <p className={`flex items-center px-4 -mb-1 ${router.pathname == item.href ? 'text-c-text font-medium' : ''}`}>{item.text}</p>
+                                </Link>
+                            </li>
+                        ))}
                     </ul>
                     <div className="items-center lg:flex hidden justify-center">
                         {buttonDrakMode()}
