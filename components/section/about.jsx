@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function About() {
     return (
-        <div className="max-w-7xl mx-auto">
+        <div className="max-w-7xl mx-auto ">
             <div className="lg:grid lg:grid-cols-3 gap-5 lg:py-10">
                 <div className="flex items-center">
 

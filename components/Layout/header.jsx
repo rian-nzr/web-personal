@@ -5,10 +5,10 @@ import { useState, useEffect } from "react";
 import { BsSun, BsMoonFill } from "react-icons/bs";
 import { MdClose } from "react-icons/md";
 import Link from "next/link";
-import { BiMenu, BiHomeAlt, BiStore } from 'react-icons/bi'
+import { BiMenu, BiHomeAlt } from 'react-icons/bi'
 
 const navs = [
-    { text: 'Hemo', href: '/' },
+    // { text: 'Home', href: '/' },
     { text: 'Blog', href: '/blog' },
     { text: 'About', href: '/about' },
     { text: 'Contact', href: '/contact' },
@@ -44,20 +44,21 @@ export default function Header() {
                 <div className="container flex justify-between items-center h-14 mx-auto">
                     <div className="flex items-center">
                         <div className="bg-white rounded-3xl">
-
-                            <Image
-                                src='/images/rlogo.png'
-                                alt="logo"
-                                width={40}
-                                height={40}
-                            />
+                            <Link href='/'>
+                                <Image
+                                    src='/images/rlogo.png'
+                                    alt="logo"
+                                    width={40}
+                                    height={40}
+                                />
+                            </Link>
                         </div>
                     </div>
                     <ul className="items-stretch text-white hidden space-x-3 md:flex">
                         {navs.map((item) => (
                             <li key={item.href} className="flex">
                                 <Link href={item.href}>
-                                <p className={`flex items-center px-4 -mb-1 ${router.pathname == item.href ? 'text-c-text font-medium' : ''}`}>{item.text}</p>
+                                    <p className={`flex items-center px-4 -mb-1 ${router.pathname == item.href ? 'text-c-text font-medium' : ''}`}>{item.text}</p>
                                 </Link>
                             </li>
                         ))}
@@ -111,17 +112,6 @@ export default function Header() {
 
                 </div>
                 <div className="absolute bottom-5 flex flex-col w-4/5">
-                    {/* <div className="flex justify-center space-x-3">
-                            <div className="flex items-center p-1">
-                                <BsFacebook className="text-xl" />
-                            </div>
-                            <div className="flex items-center p-1">
-                                <BsInstagram className="text-xl" />
-                            </div>
-                            <div className="flex items-center p-1">
-                                <BsGithub className="text-xl" />
-                            </div>
-                        </div> */}
                     <p className="py-2 text-sm text-center text-gray-700">
                         Copyright <span className="font-medium">RIAN</span>© {new Date().getFullYear()}
                     </p>

@@ -3,8 +3,10 @@ import { Html, Head, Main, NextScript } from 'next/document'
 export default function Document() {
   return (
     <Html lang="en">
-      <Head />
-      <body className='bg-gray-50 dark:text-gray-100 dark:bg-c-dark'>
+      <Head >
+      <link rel="icon" type="image/png" sizes="32x32" href="/icon1.png"/>
+      </Head>
+      <body >
         <Main />
         <NextScript />
       </body>
